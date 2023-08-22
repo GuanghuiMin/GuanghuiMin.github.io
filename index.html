@@ -158,7 +158,7 @@ title: Home
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#nlp">NLP</div></li>
-    <li><div class="button" data-ref="#statitics">STATS</div></li>
+    <li><div class="button" data-ref="#stats">STATS</div></li>
     <li><div class="button" data-ref="#projects-all">All</div></li>
   </ul>
 
@@ -171,56 +171,49 @@ title: Home
           <div class="row">
         {% endif %}
 
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
+        <div class="four columns">
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="{{ project.url }}">
+                <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>{{ project.title }}</b> <br/>
+              {{ project.subtitle }}
             </div>
           </div>
+        </div>
 
-        {% if index_modulo == 2 %}
+        {% if index_modulo == 2 or forloop.last %}
           </div>
         {% endif %}
       {% endfor %}
     </div>
 
-      <div class="tab-content">
-    <div class="tab-pane" id="statistics">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "nlp" %}
+    <div class="tab-pane" id="stats">
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "stats" %}
       {% for project in selected_projects %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
         {% if index_modulo == 0 %}
           <div class="row">
         {% endif %}
 
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
+        <div class="four columns">
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="{{ project.url }}">
+                <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>{{ project.title }}</b> <br/>
+              {{ project.subtitle }}
             </div>
           </div>
+        </div>
 
-        {% if index_modulo == 2 %}
+        {% if index_modulo == 2 or forloop.last %}
           </div>
         {% endif %}
       {% endfor %}
@@ -233,30 +226,26 @@ title: Home
           <div class="row">
         {% endif %}
 
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
+        <div class="four columns">
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="{{ project.url }}">
+                <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>{{ project.title }}</b> <br/>
+              {{ project.subtitle }}
             </div>
           </div>
+        </div>
 
-        {% if index_modulo == 2 %}
+        {% if index_modulo == 2 or forloop.last %}
           </div>
         {% endif %}
       {% endfor %}
     </div>
   </div>
-
 </div>
 
 

@@ -1,39 +1,39 @@
 projects:
-  - title: "Detecting Network Effects"
-    subtitle: "Randomizing Over Randomized Experiments"
-    thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
+  - title: "Financial domain applications based on LLMs"
+    subtitle: "Fine-tuning and Langchain with local deployed LLMs"
+    thumbnail: "assets/projects/nlp_llm/thumbnail.png"
     url: "projects/2016_network-ab-testing.html"
     selected: nlp
 
-  - title: "Human Atlas"
-    subtitle: "Tool for Mapping Social Networks"
-    thumbnail: "assets/projects/2016_human-atlas/thumbnail.png"
+  - title: "Finance task-oriented chatbot with Rasa"
+    subtitle: "A financial research assistant"
+    thumbnail: "assets/projects/nlp_rasa/graph_architecture.png"
     url: "projects/2016_human-atlas.html"
     selected: nlp
 
-  - title: "Responsive Communities"
-    subtitle: "Pilot project in Jun, Spain"
-    thumbnail: "assets/projects/2015_jun/thumbnail.png"
-    url: "projects/2015_jun.html"
+  - title: "Exploration of Question Answering methods"
+    subtitle: "Comparative Analysis of BiDAF and DrQA with Different Embedding Methods for Question Answering"
+    thumbnail: "assets/projects/nlp_qa/thumbnail.png"
+    url: "projects/nlp_rasa.html"
     selected: nlp
 
   - title: "Cold-Start Recommendations"
     subtitle: "Learning Local Collective Embeddings"
-    thumbnail: "assets/projects/2014_item-cold-start/thumbnail.jpg"
+    thumbnail: "assets/projects/stats_hmm/thumbnail.png"
     url: "projects/2014_item-cold-start.html"
-    selected: n
+    selected: stats
 
   - title: "Semi-supervised Learning"
     subtitle: "Iterative Hybrid Algorithm"
     thumbnail: "assets/projects/2013_iterative-hybrid-algorithm/thumbnail.jpg"
     url: "projects/2013_iterative-hybrid-algorithm.html"
-    selected: n
+    selected: stats
 
   - title: "Twitter Sentiment Analysis"
     subtitle: "Analyzing Financial Tweets"
     thumbnail: "assets/projects/2011_twitter-sentiment-analysis/thumbnail.png"
     url: "projects/2011_twitter-sentiment-analysis.html"
-    selected: n
+    selected: stats
 
   - title: "Wordnet Construction"
     subtitle: "Automatic Wordnet Construction using Language Models"
