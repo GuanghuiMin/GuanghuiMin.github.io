@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Guanghui Min | Analysis of Beijing PM 2.5 Dataset Using MCMC-glmm</title>
+  <meta name="description" content="Martin Saveski">
+  <meta name="author" content="Martin Saveski">
+  <meta property="og:title" content="Martin Saveski" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.martinsaveski.com" />
+  <meta property="og:site_name" content="Martin Saveski" />
+  <link rel="canonical" href="http://www.martinsaveski.com" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img class="u-max-full-width" src='/assets/profile-pics/GM.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Guanghui Min</h1>
+            <p>Machine Learning Engineer at Yinhua Fund Management Co., Ltd<br/> CFA Level III Candidate<br/>Mobile & Wechat: (+86) 132 0711 8038</p>
+            <p>guanghui [AT] umich.edu</p>
+            <p>
+<!--              <span onclick="window.open('')" style="cursor: pointer">-->
+<!--                <i class="fa fa-twitter" aria-hidden="true"></i>-->
+<!--              </span>-->
+
+              <span onclick="window.open('https://www.linkedin.com/in/guanghui-min/')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/GuanghuiMin')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+
+<!--              <span onclick="window.open('')" style="cursor: pointer">-->
+<!--                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>-->
+<!--              </span>-->
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#courses>Courses</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#awards>Academic Awards</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#certificates>Certificates</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>CV</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="docs-section">
+
+  
+    <div class="title-subtitle">
+      <h3>Analysis of Beijing PM 2.5 Dataset Using MCMC-glmm</h3>
+      <h5>Use MCMC simulation for parameter estimation</h5>
+    </div>
+  
+
+  <p><a href="https://drive.google.com/file/d/1Te4dA4cANXVrGKs8nFDkdE-64cmrt6aj/view?usp=drive_link">[slide]</a></p>
+
+<p>The presented project focuses on the modeling of PM 2.5 data in Beijing, considering the influence of weather conditions. To accomplish this task, a generalized linear mixed model (GLMM) is employed, which allows for the incorporation of both fixed and random effects in the analysis.</p>
+
+<p>The project utilizes a Bayesian hierarchical modeling approach, coupled with the <strong>Monte Carlo Markov Chain (MCMC) method</strong>, to estimate the model parameters. This Bayesian framework provides a robust and flexible approach to handle the complexities of the data and capture the uncertainties associated with the parameter estimates.</p>
+
+<p>An essential aspect of the project involves assessing the stability of the parameter estimates. This is accomplished through the analysis of autocorrelation plots and trace plots, which provide insights into the convergence and mixing properties of the MCMC algorithm. These diagnostic plots offer valuable information for ensuring the reliability and accuracy of the estimation process.</p>
+
+<figure class="image">
+  <img src="/assets/projects/stats_lmm/trace_plot.png" alt="" style="width: 100%" />
+  <figcaption><b></b></figcaption>
+</figure>
+
+<p>By combining the PM 2.5 data with the corresponding weather conditions, the GLMM enables the investigation of the relationship between air pollution levels and various meteorological factors. This modeling approach accounts for both fixed effects, representing the systematic influences of weather conditions, and random effects, capturing the variability across different locations or time points.</p>
+<figure class="image">
+  <img src="/assets/projects/stats_lmm/main.png" alt="" style="width: 100%" />
+  <figcaption><b></b></figcaption>
+</figure>
+
+<p>The project’s contributions lie in its ability to provide a comprehensive analysis of the PM 2.5 data in Beijing, considering the complex interplay between air pollution and weather conditions. By employing the GLMM and Bayesian hierarchical modeling techniques, the project offers a robust and statistically rigorous approach to estimate the model parameters and gain insights into the underlying relationships.</p>
+
+<p>The use of MCMC methods ensures that the estimation process is reliable and produces stable results. The autocorrelation plots and trace plots serve as important diagnostic tools to assess the convergence and mixing properties of the MCMC algorithm, providing confidence in the reliability and adequacy of the parameter estimates.</p>
+
+<p>Overall, the Generalized Linear Mixed Model for PM 2.5 Data Analysis project represents a significant advancement in understanding the factors influencing air pollution in Beijing. By incorporating weather conditions into the modeling framework, the project provides valuable insights into the relationship between PM 2.5 concentrations and meteorological factors. The application of Bayesian hierarchical modeling and MCMC methods ensures robust parameter estimation and enhances our understanding of the complex dynamics of air pollution in urban environments.</p>
+
+
+</div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Guanghui Min
+        </div>
+        <div class="four columns">
+          guanghui [AT] umich.edu
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/guanghui-min/')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/GuanghuiMin')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
