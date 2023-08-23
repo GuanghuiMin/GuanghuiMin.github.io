@@ -1,6 +1,6 @@
 projects:
   - title: "Applications of LLMs in Financial Industry"
-    subtitle: "Fine-tuning and Langchain with local deployed LLMs"
+    subtitle: "Fine-tune and apply Langchain to local deployed LLMs"
     thumbnail: "assets/projects/nlp_llm/thumbnail.png"
     url: "projects/2016_network-ab-testing.html"
     selected: nlp
@@ -11,7 +11,7 @@ projects:
     url: "projects/2016_human-atlas.html"
     selected: nlp
 
-  - title: "Evaluation of Question Answering Methods"
+  - title: "Evaluation of Question Answering Methods with different ways of preprocessing"
     subtitle: "Evaluation based on SQuAD 2.0"
     thumbnail: "assets/projects/nlp_qa/thumbnail.png"
     url: "projects/nlp_rasa.html"
@@ -20,13 +20,13 @@ projects:
   - title: "Asset Allocation using Regime-switching Hidden Markov Method"
     subtitle: "Cluster time series data and construct portfolio"
     thumbnail: "assets/projects/stats_hmm/thumbnail.png"
-    url: "projects/2014_item-cold-start.html"
+    url: "projects/stats_hmm.html"
     selected: stats
 
   - title: "Analysis of Beijing PM 2.5 Dataset Using MCMC-glmm"
-    subtitle: "Iterative Hybrid Algorithm"
+    subtitle: "Use MCMC simulation for parameter estimation"
     thumbnail: "assets/projects/stats_lmm/thumbnail.png"
-    url: "projects/2013_iterative-hybrid-algorithm.html"
+    url: "projects/stats_glmm.html"
     selected: stats
 
   - title: "Coupled Mixed Model for Joint Genetic Analysis "
