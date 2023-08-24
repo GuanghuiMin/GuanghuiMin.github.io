@@ -2,13 +2,13 @@ projects:
   - title: "Applications of LLMs in Financial Industry"
     subtitle: "Fine-tune and apply Langchain to local deployed LLMs"
     thumbnail: "assets/projects/nlp_llm/thumbnail.png"
-    url: "projects/2016_network-ab-testing.html"
+    url: "projects/nlp_llm.html"
     selected: nlp
 
   - title: "Financial Task-oriented chatbot"
     subtitle: "A financial research assistant based on Rasa"
     thumbnail: "assets/projects/nlp_rasa/graph_architecture.png"
-    url: "projects/2016_human-atlas.html"
+    url: "projects/nlp_rasa.html"
     selected: nlp
 
   - title: "Evaluation of Question Answering Methods with different ways of preprocessing"
