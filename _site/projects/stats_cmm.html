@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Guanghui Min | Evaluation of Question Answering Methods with different ways of preprocessing</title>
+  <title>Guanghui Min | Coupled Mixed Model for Joint Genetic Analysis</title>
   <meta name="description" content="Martin Saveski">
   <meta name="author" content="Martin Saveski">
   <meta property="og:title" content="Martin Saveski" />
@@ -114,39 +114,37 @@
 
   
     <div class="title-subtitle">
-      <h3>Evaluation of Question Answering Methods with different ways of preprocessing</h3>
-      <h5>Evaluation based on SQuAD 2.0</h5>
+      <h3>Coupled Mixed Model for Joint Genetic Analysis</h3>
+      <h5>Application to Alzheimer’s Disease and Substance Use Disorder</h5>
     </div>
   
 
-  <p><a href="https://drive.google.com/file/d/1uxej0NKdNBpZfQXGd4ZnSXHpamm0U1i9/view?usp=drive_link">[Poster]</a></p>
+  <p><strong>Acknowledged by Dr. <a href="https://haohanwang.github.io/">Haohan Wang</a></strong></p>
 
-<p><a href="https://github.com/GuanghuiMin/EmbedQA">[Code]</a></p>
+<p><a href="https://www.biorxiv.org/content/10.1101/336727v2">[Paper]</a></p>
 
-<h3 id="background-and-task">Background and Task</h3>
+<p><a href="https://github.com/GuanghuiMin/CMM">[code]</a></p>
 
-<p>Text understanding and reasoning are prominent areas of research in Natural Language Processing (NLP), offering potential applications in virtual assistants and automated customer service. The success of these applications relies on the ability of models to comprehend and process textual information. One common method for evaluating a model’s comprehension capability is through question answering (QA). QA tasks involve answering queries presented in natural language based on a given context paragraph that contains the relevant information. This project focuses on building and comparing the performance of two neural network QA models based on two seminal papers.</p>
+<p><a href="https://drive.google.com/file/d/1FNVPzOf6gd-6WKJSvoJU7Y-UJTLPcv76/view?usp=drive_link">📚[My Contribution]</a></p>
 
-<h3 id="approaches">Approaches</h3>
+<p>Over the past decade, Genome-wide Association Studies (GWASs) have played a pivotal role in deciphering the human genome and identifying genetic variations associated with diseases. However, a promising approach called “joint analysis,” which involves analyzing multiple independently generated GWAS datasets, has remained largely in its preliminary stages. This project aims to address this gap by proposing an innovative method known as the Coupled Mixed Model (CMM).</p>
 
-<p>The project explores two primary approaches for question answering:</p>
+<p>The CMM method enables the joint analysis of GWAS on two independently collected datasets, even when they exhibit different phenotypes. It achieves this by leveraging a set of multivariate sparse mixed models and employing statistical learning modeling to infer uncollected phenotypes. Notably, the CMM method takes into account confounders arising from population stratification, family structures, cryptic relatedness, and other confounders commonly encountered in joint genetic studies.</p>
 
-<p><strong>·</strong> Bi-Directional Attention Flow (BiDAF): This approach leverages bidirectional attention to enable the model to focus on relevant information in both the context paragraph and the query. By incorporating complex embeddings, the BiDAF model aims to enhance its performance in understanding and answering questions accurately.</p>
+<p>The project introduces several key contributions. Firstly, a Bayesian maximum likelihood model is proposed to handle multi-correlated responses data, particularly when the design matrix contains missing values. The objective is to make predictions utilizing same-distribution sampled data to the greatest extent possible. To optimize the loss function, the Alternating Direction Method of Multipliers (ADMM) algorithm is applied, and its convergence is proven using a block coordinate method.</p>
 
-<p><strong>·</strong> Document Reader Question Answering (DrQA): The DrQA model emphasizes the inclusion of various types of features during the embedding step. By incorporating a wide range of features, such as token features and aligned question embeddings, DrQA aims to improve its overall performance in question answering tasks.</p>
+<p>The performance of the CMM method is thoroughly evaluated and compared against competing methods, including the baseline linear mixed model. The superiority of the CMM method is demonstrated through box plots of the area under ROC curves (auROC), which accurately identify the Single Nucleotide Polymorphisms (SNPs) jointly responsible for both phenotypes as well as specifically for Phenotype 1.</p>
 
-<h3 id="analysis">Analysis</h3>
+<figure class="image">
+  <img src="/assets/projects/stats_cmm/eval.png" alt="" style="width: 100%" />
+  <figcaption><b></b></figcaption>
+</figure>
 
-<p>The project conducts a comprehensive analysis of the two QA models, yielding valuable insights into their performance:</p>
+<p>Additionally, the project involves the derivation of early formulas and the execution of experiments and validations on small datasets. The results obtained from these rigorous evaluations contribute to the development and refinement of the proposed Bayesian maximum likelihood model. The project’s significance is further underscored by the acknowledgment and appreciation received from the authors, with the project member’s name listed in the Acknowledgments section of the published paper.</p>
 
-<p><strong>·</strong> BiDAF: The analysis reveals that more complex embeddings result in improved performance for the BiDAF model. By incorporating advanced embedding techniques, the model achieves better comprehension and accuracy in answering questions. However, the analysis also indicates that the current set of hyperparameters for BiDAF may not be optimal. As part of future work, the project aims to search for and identify the most suitable hyperparameters that enable the model to converge globally and enhance its overall performance.</p>
+<p>To validate the effectiveness of the CMM method, simulation experiments are conducted. Furthermore, a real data joint analysis is performed on two independent datasets specifically generated to investigate the genetic associations of Alzheimer’s disease and substance use disorder, respectively. The outcomes of these analyses reveal new insights into these diseases, shedding light on their genetic underpinnings and potential avenues for further research.</p>
 
-<p><strong>·</strong> DrQA: The analysis demonstrates that the inclusion of a broader range of features during the embedding step leads to improved performance for the DrQA model. By incorporating multiple types of features, such as token features and aligned question embeddings, DrQA achieves enhanced comprehension and more accurate answers to questions.</p>
-
-<p>The project’s findings highlight the importance of leveraging sophisticated embeddings and diverse feature sets to improve the performance of QA models. Additionally, the identification of areas for improvement, such as hyperparameter tuning for BiDAF, suggests avenues for future research and refinement of the models.</p>
-
-<p>In conclusion, this project focuses on the development and evaluation of two neural network QA models: Bi-Directional Attention Flow (BiDAF) and Document Reader Question Answering (DrQA). Through a comprehensive analysis, the project showcases the impact of complex embeddings and diverse feature sets on the models’ performance. The findings contribute to the advancement of text understanding and reasoning in NLP and provide insights for future improvements in QA-based applications, including virtual assistants and automated customer service.</p>
-
+<p>Overall, this project bridges the gap in joint analysis in GWAS by introducing the Coupled Mixed Model (CMM) method. By accommodating different phenotypes, addressing confounders, and leveraging advanced statistical techniques, the project significantly advances the field of genetic research. The promising results and novel insights obtained from this project hold the potential to drive future breakthroughs in deciphering the complex relationship between genetics and diseases, ultimately contributing to advancements in personalized medicine and healthcare.</p>
 
 
 </div>

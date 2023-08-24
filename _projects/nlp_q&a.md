@@ -1,19 +1,35 @@
 ---
 layout: project
-title: AI Agent for Connect Four
-subtitle: My First Intelligent System
+title: Evaluation of Question Answering Methods with different ways of preprocessing
+subtitle: Evaluation based on SQuAD 2.0
 ---
 
-<img style="width: 40%; float: left; border: 1px solid black; margin-top: 10px; margin-right: 10px;" src="{{"/assets/projects/nlp_q&a/main.png" | prepend: site.baseurl }}"/>
-This is a program I have developed during my undergraduate studies as a project for an introductory course in Artificial Intelligence. I particularly like this program as it is the first thing I have developed that seems to show intelligence, i.e., can kind of make its own decision, beyond what it was explicitly programmed by a human.
+[[Poster]](https://drive.google.com/file/d/1uxej0NKdNBpZfQXGd4ZnSXHpamm0U1i9/view?usp=drive_link)
 
-[Connect four](http://en.wikipedia.org/wiki/Connect_Four) is a strategy board game where the player who aligns four disks wins. Program has two main components: (1) the search algorithm, and (2) the evaluation function. The evaluation function quantifies how desired or undesired a state of the board is for the agent. The search algorithm helps the agent decided on the next move by efficiently exploring what might be the consequences of each move. This program implements the [Minmax](http://en.wikipedia.org/wiki/Minimax) algorithm with two extensions: [Alpha Beta pruning](http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) — which substantially cuts the search space; and [iterative deepening](http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search) — which combines the advantages of depth-first and breadth-first search.
+[[Code]](https://github.com/GuanghuiMin/EmbedQA)
 
-**Evaluation function.** The Evaluation function is supposed to evaluate how good a given state is for the agent, i.e., how close it is to winning the game. Since, this is the agent’s view of the “real world”, I considered the design of the evaluation function as most important. Having complex evaluation function with many features results with more clever behavior of the agent, but it increases the number of calculations and time needed to evaluate each board state. As the time for each move is limited, searching with complex evaluation function cannot be performed in great depth. The trade-off between complex evaluation function and search at larger depth is obvious. After experimenting with several different models I found an approach that suited me the best in evaluation of a state. I decided to consider all possible combinations of four fields (horizontal, vertical and diagonal) and if none of the players or both of the players has selected fields in the same 4-field combination, the combination will be instantly discarded. Otherwise, it will be added to a state-score depending on the number of fields taken. Depending on the number, and if it’s agent or player fields, a certain weight will be applied. Initially, I started out with weights that were the square of the number of occupied fields in each block of four (i.e., 3-in-a-row would give a score of 9, 2 would be 4, 1=1) and if state resulted in 4 in a row it would get a big bonus/punishment of 10000/-10000. However, it quickly became evident that I would at least need to raise the punishment if the opponent had 4 in a row. In order to compare between the suitability of the weights I set up a game to allow two agents with different weights to play against each other. After trying with different weights 15-20 times, I decided that it was fairly optimized. I could imagine automating this process, perhaps using Simulated Annealing.
 
-**Search Algorithm.** My initial implementation used solely the Minimax search algorithm and could search in depth of six for around one minute. Obviously this was not fast enough, my first improvement was implementing Alpha Beta Pruning to minimize the search space. In order to improve the pruning I changed the order in which moves are considered, stating in the middle and alternating one row left and right. This resulted in tremendous speed up of the search. However, searching only to fixed depth it was hard to control the time for search to be in the given time limit. As a solution, I implemented Iterative Deepening Search, which called the Alpha Beta Pruning search with increased the depth in each iteration and returned the value of the last iteration.
+### Background and Task
 
-**Optimizations.** Obviously, to make the agent look more intelligent it had to be well optimized. Since the evaluation function is called extremely often during the search, it is the best place to start. As there are 2187 (3^7) possible combinations of lines of seven fields (729 of six fields, and 243 lines of five fields), I precomputed the evaluation values of every possible horizontal, vertical, diagonal line on the board. The evaluated values I stored in hash tables with the combinations as keys. So that the evaluation function only looks up the value for each line and adds it to the state value. The next optimization was inspired by the Iterative Deepening Search. During the search in every iteration, we know exactly what was the best move in the previous iteration, so if we consider the best row from the previous iteration first, it is very possible that it will have a high alpha/beta value and more of the search tree will be pruned. This results in decreased search space and allows search to be performed at grater depth.
+Text understanding and reasoning are prominent areas of research in Natural Language Processing (NLP), offering potential applications in virtual assistants and automated customer service. The success of these applications relies on the ability of models to comprehend and process textual information. One common method for evaluating a model's comprehension capability is through question answering (QA). QA tasks involve answering queries presented in natural language based on a given context paragraph that contains the relevant information. This project focuses on building and comparing the performance of two neural network QA models based on two seminal papers.
 
-**Implementation.** [GitHub Repository](https://github.com/msaveski/connect-four)
+### Approaches
+
+The project explores two primary approaches for question answering:
+
+**·** Bi-Directional Attention Flow (BiDAF): This approach leverages bidirectional attention to enable the model to focus on relevant information in both the context paragraph and the query. By incorporating complex embeddings, the BiDAF model aims to enhance its performance in understanding and answering questions accurately.
+
+**·** Document Reader Question Answering (DrQA): The DrQA model emphasizes the inclusion of various types of features during the embedding step. By incorporating a wide range of features, such as token features and aligned question embeddings, DrQA aims to improve its overall performance in question answering tasks.
+
+### Analysis
+
+The project conducts a comprehensive analysis of the two QA models, yielding valuable insights into their performance:
+
+**·** BiDAF: The analysis reveals that more complex embeddings result in improved performance for the BiDAF model. By incorporating advanced embedding techniques, the model achieves better comprehension and accuracy in answering questions. However, the analysis also indicates that the current set of hyperparameters for BiDAF may not be optimal. As part of future work, the project aims to search for and identify the most suitable hyperparameters that enable the model to converge globally and enhance its overall performance.
+
+**·** DrQA: The analysis demonstrates that the inclusion of a broader range of features during the embedding step leads to improved performance for the DrQA model. By incorporating multiple types of features, such as token features and aligned question embeddings, DrQA achieves enhanced comprehension and more accurate answers to questions.
+
+The project's findings highlight the importance of leveraging sophisticated embeddings and diverse feature sets to improve the performance of QA models. Additionally, the identification of areas for improvement, such as hyperparameter tuning for BiDAF, suggests avenues for future research and refinement of the models.
+
+In conclusion, this project focuses on the development and evaluation of two neural network QA models: Bi-Directional Attention Flow (BiDAF) and Document Reader Question Answering (DrQA). Through a comprehensive analysis, the project showcases the impact of complex embeddings and diverse feature sets on the models' performance. The findings contribute to the advancement of text understanding and reasoning in NLP and provide insights for future improvements in QA-based applications, including virtual assistants and automated customer service.
 

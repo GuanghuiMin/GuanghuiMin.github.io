@@ -14,8 +14,14 @@ projects:
   - title: "Evaluation of Question Answering Methods with different ways of preprocessing"
     subtitle: "Evaluation based on SQuAD 2.0"
     thumbnail: "assets/projects/nlp_qa/thumbnail.png"
-    url: "projects/nlp_rasa.html"
+    url: "projects/nlp_q&a.html"
     selected: nlp
+
+  - title: "Coupled Mixed Model for Joint Genetic Analysis "
+    subtitle: "Application to Alzheimer’s Disease and Substance Use Disorder"
+    thumbnail: "assets/projects/stats_cmm/thumbnail.png"
+    url: "projects/stats_cmm.html"
+    selected: stats
 
   - title: "Asset Allocation using Regime-switching Hidden Markov Method"
     subtitle: "Cluster time series data and construct portfolio"
@@ -27,10 +33,4 @@ projects:
     subtitle: "Use MCMC simulation for parameter estimation"
     thumbnail: "assets/projects/stats_lmm/thumbnail.png"
     url: "projects/stats_glmm.html"
-    selected: stats
-
-  - title: "Coupled Mixed Model for Joint Genetic Analysis "
-    subtitle: "Application to Alzheimer’s Disease and Substance Use Disorder"
-    thumbnail: "assets/projects/stats_cmm/thumbnail.png"
-    url: "projects/2011_twitter-sentiment-analysis.html"
     selected: stats
