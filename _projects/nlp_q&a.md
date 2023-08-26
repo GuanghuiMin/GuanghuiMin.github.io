@@ -4,7 +4,7 @@ title: Evaluation of Question Answering Methods with different ways of preproces
 subtitle: Evaluation based on SQuAD 2.0
 ---
 
-[[Poster]](https://drive.google.com/file/d/1uxej0NKdNBpZfQXGd4ZnSXHpamm0U1i9/view?usp=drive_link)
+[[Poster]](https://drive.google.com/file/d/1uxej0NKdNBpZfQXGd4ZnSXHpamm0U1i9/view?usp=sharing)
 
 [[Code]](https://github.com/GuanghuiMin/EmbedQA)
 

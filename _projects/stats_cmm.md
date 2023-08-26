@@ -9,7 +9,7 @@ subtitle: Application to Alzheimer’s Disease and Substance Use Disorder
 
 [[code]](https://github.com/GuanghuiMin/CMM)
 
-[📚[My Contribution]](https://drive.google.com/file/d/1FNVPzOf6gd-6WKJSvoJU7Y-UJTLPcv76/view?usp=drive_link)
+[📚[My Contribution]](https://drive.google.com/file/d/1FNVPzOf6gd-6WKJSvoJU7Y-UJTLPcv76/view?usp=sharing)
 
 Over the past decade, Genome-wide Association Studies (GWASs) have played a pivotal role in deciphering the human genome and identifying genetic variations associated with diseases. However, a promising approach called "joint analysis," which involves analyzing multiple independently generated GWAS datasets, has remained largely in its preliminary stages. This project aims to address this gap by proposing an innovative method known as the Coupled Mixed Model (CMM).
 
