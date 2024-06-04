@@ -3,7 +3,7 @@ experiences:
 - place: "University of Virginia"
   time: "Aug 2024 - now"
   title: "Ph.D. Student"
-  subtitle: "Department of Computer Science"
+  subtitle: "Department of Computer Science<br>School of Engineering and Applied Science"
   category: "school"
 
 
@@ -16,7 +16,7 @@ experiences:
 - place: "University of Michigan, Ann Arbor"
   time: "Sep 2018 - May 2020"
   title: "M.Sc. Student"
-  subtitle: "Statistic Department, LSA"
+  subtitle: "Department of Statistics<br>College of Literature, Science and the Arts"
   category: "school"
 
 
@@ -30,5 +30,5 @@ experiences:
 - place: "Wuhan Univeristy"
   time: "Sep 2014 – Jun 2018"
   title: "B.Sc. Student"
-  subtitle: "Mathematics and Statistics <br/> Second Class Honours"
+  subtitle: "School Mathematics and Statistics"
   category: "school"
