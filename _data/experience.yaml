@@ -1,8 +1,15 @@
 experiences:
 
+- place: "University of Virginia"
+  time: "Aug 2024 - now"
+  title: "Ph.D. Student"
+  subtitle: "Department of Computer Science"
+  category: "school"
+
+
 - place: "Yinhua Fund Management Co., Ltd"
-  time: "2020 - now"
-  title: "Software Development Engineer"
+  time: "Aug 2020 - Jul 2024"
+  title: "Full-time Software Engineer"
   subtitle: "Innovation Center, IT Department"
   category: "work"
 
@@ -12,17 +19,12 @@ experiences:
   subtitle: "Statistic Department, LSA"
   category: "school"
 
-- place: "Yinhua Fund Management Co., Ltd"
-  time: "Summer 2019"
-  title: "Analyst Intern"
-  subtitle: "Active Research Department"
-  category: "work"
 
 - place: "Carnegie Mellon University"
   time: "Summer 2017"
   title: "Research Assistant"
   subtitle: "Language Technologies Institute"
-  category: "school"
+  category: "work"
 
 
 - place: "Wuhan Univeristy"
