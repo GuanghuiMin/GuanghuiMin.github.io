@@ -34,7 +34,7 @@
 
   <!-- Font-Awesome
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
+<link rel="stylesheet" href={{ "/libs/external/fontawesome-6.5.2/css/all.css" | prepend: site.baseurl }}>
 
   <!-- Academicons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -69,7 +69,7 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          <img class="u-max-full-width" src="{{ site.baseurl }}{{ site.data.main_info.profile_pic }}">
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
@@ -80,12 +80,17 @@
 <!--                <i class="fa fa-twitter" aria-hidden="true"></i>-->
 <!--              </span>-->
 
+            <p>
               <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa-brands fa-linkedin fa-1x" aria-hidden="true"></i>
               </span>
 
               <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-1x" aria-hidden="true"></i>
+              </span>
+
+                <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
+                <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
               </span>
 
 <!--              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">-->
@@ -115,17 +120,20 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.logos }}'></a>
+          <img class="u-max-full-width" src="{{ site.baseurl }}{{ site.data.main_info.logos }}">
         </div>
         <div class="four columns">
 <!--          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
             <i class="fa fa-twitter" aria-hidden="true"></i>
           </span> -->
           <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
           </span>
           <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+          </span>
+            <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
+            <i class="fa-brands fa-zhihu fa-lg" aria-hidden="true"></i>
           </span>
 <!--          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
             <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
