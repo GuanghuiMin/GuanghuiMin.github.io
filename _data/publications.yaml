@@ -4,4 +4,5 @@ papers:
     authors: "Yinhan He, Chen Chen, Song Wang, <b>Guanghui Min</b>, Jundong Li"
     venue: "WSDM'25: The 18th ACM International Conference on Web Search and Data Mining. 2025."
 #    paper_pdf: ""
+#    code: "https://github.com/YinhanHe123/DINO"
     selected: y
