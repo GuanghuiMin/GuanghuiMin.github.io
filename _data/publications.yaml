@@ -1,8 +1,14 @@
 papers:
 
+  - title: "Scaling Epidemic Inference on Contact Networks: Theory and Algorithms"
+    authors: "<b>Guanghui Min</b>, Yinhan He, Chen Chen"
+    venue: "NeurIPS'25: The 39th Annual Conference on Neural Information Processing Systems. 2025."
+    code: "https://github.com/GuanghuiMin/rapid"
+    selected: y
+
   - title: "Demystifying Epidemic Containment in Directed Networks: Theory and Algorithms"
     authors: "Yinhan He, Chen Chen, Song Wang, <b>Guanghui Min</b>, Jundong Li"
     venue: "WSDM'25: The 18th ACM International Conference on Web Search and Data Mining. 2025."
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3701551.3703575"
     code: "https://github.com/YinhanHe123/DINO"
-    selected: y
+    selected: n
