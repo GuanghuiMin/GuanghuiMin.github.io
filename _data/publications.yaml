@@ -8,6 +8,7 @@ papers:
   - title: "Scaling Epidemic Inference on Contact Networks: Theory and Algorithms"
     authors: "<b>Guanghui Min</b>, Yinhan He, Chen Chen"
     venue: "NeurIPS'25: The 39th Annual Conference on Neural Information Processing Systems. 2025."
+    paper_pdf: "https://neurips.cc/virtual/2025/poster/115889"
     code: "https://github.com/GuanghuiMin/rapid"
     selected: y
 
