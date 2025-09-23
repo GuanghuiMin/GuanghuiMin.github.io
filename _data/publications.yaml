@@ -1,4 +1,9 @@
 papers:
+  - title: "Exploring Generative Approaches for Predicting Copolymer Sequences from Reaction Conditions"
+    authors: "<b>Guanghui Min</b><sup>‡</sup>, Wenxin Xu<sup>‡</sup>, Kateri DuBay, Chen Chen"
+    venue: "NeurIPS 2025 AI for Science Workshop. 2025."
+    code: "https://github.com/GuanghuiMin/PolyGen"
+    selected: n
 
   - title: "Scaling Epidemic Inference on Contact Networks: Theory and Algorithms"
     authors: "<b>Guanghui Min</b>, Yinhan He, Chen Chen"
