@@ -2,6 +2,7 @@ papers:
   - title: "Exploring Generative Approaches for Predicting Copolymer Sequences from Reaction Conditions"
     authors: "<b>Guanghui Min</b><sup>‡</sup>, Wenxin Xu<sup>‡</sup>, Kateri DuBay, Chen Chen"
     venue: "<b>NeurIPS'25</b> AI for Science Workshop. 2025."
+    paper_pdf: "https://openreview.net/forum?id=h6aQcEKE8A"
     code: "https://github.com/GuanghuiMin/PolyGen"
     selected: n
 
