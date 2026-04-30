@@ -1,4 +1,25 @@
 papers:
+  - title: "GIST: Targeted Data Selection for Instruction Tuning via Coupled Optimization Geometry"
+    authors: "<b>Guanghui Min</b>, Tianhao Huang, Ke Wan, Chen Chen"
+    venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
+    paper_pdf: "https://arxiv.org/pdf/2602.18584"
+    code: "https://github.com/GuanghuiMin/GIST"
+    selected: y
+
+  - title: "Bridging Dynamics and Data: A Unified Diffusion Framework for Mechanistically-Informed Epidemic Forecasting"
+    authors: "<b>Guanghui Min</b>, Tianhao Huang, Ke Wan, Qi R. Wang, Chen Chen"
+    venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
+    paper_pdf: ""
+    code: "https://github.com/GuanghuiMin/EpiDiff"
+    selected: y
+
+  - title: "Uncovering Latent Communication Patterns in Brain Networks via Adaptive Flow Routing"
+    authors: "Tianhao Huang, <b>Guanghui Min</b>, Zhenyu Lei, Aiying Zhang, Chen Chen"
+    venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
+    paper_pdf: "https://arxiv.org/pdf/2602.00561"
+    code: "https://github.com/Skyyyy0920/DIAL"
+    selected: n
+
   - title: "Exploring Generative Approaches for Predicting Copolymer Sequences from Reaction Conditions"
     authors: "<b>Guanghui Min</b><sup>‡</sup>, Wenxin Xu<sup>‡</sup>, Kateri DuBay, Chen Chen"
     venue: "<b>NeurIPS'25</b> AI for Science Workshop. 2025."
