@@ -157,12 +157,22 @@
                 <i class="fa-brands fa-orcid fa-1x" aria-hidden="true"></i>
               </span>
 
-                <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
+              <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
                 <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
               </span>
-<!--          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-          </span> -->
+
+              {% if site.data.main_info.xiaohongshu_qr %}
+              {% if site.data.main_info.xiaohongshu and site.data.main_info.xiaohongshu != "" %}
+              <span class="xhs-hover" style="cursor: pointer" onclick="window.open('{{ site.data.main_info.xiaohongshu }}')">
+              {% else %}
+              <span class="xhs-hover" style="cursor: default">
+              {% endif %}
+                <img class="xhs-icon" src="{{ site.baseurl }}/assets/profile-pics/rednote_logo.png" alt="小红书" />
+                <span class="xhs-popover" aria-hidden="true">
+                  <img src="{{ site.baseurl }}{{ site.data.main_info.xiaohongshu_qr }}" alt="小红书二维码" />
+                </span>
+              </span>
+              {% endif %}
         </div>
       </div>
     </div>

@@ -32,6 +32,7 @@ papers:
     venue: "<b>NeurIPS'25</b>: The 39th Annual Conference on Neural Information Processing Systems. 2025."
     paper_pdf: "https://neurips.cc/virtual/2025/poster/115889"
     code: "https://github.com/GuanghuiMin/rapid"
+    poster: "assets/publications/2025_rapid/poster.pdf"
     selected: y
 
   - title: "Demystifying Epidemic Containment in Directed Networks: Theory and Algorithms"
