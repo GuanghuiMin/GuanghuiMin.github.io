@@ -4,6 +4,7 @@ papers:
     venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
     paper_pdf: "https://arxiv.org/pdf/2602.18584"
     code: "https://github.com/GuanghuiMin/GIST"
+    slides: "assets/publications/2026_gist/gist_slide.pdf"
     selected: y
 
   - title: "Bridging Dynamics and Data: A Unified Diffusion Framework for Mechanistically-Informed Epidemic Forecasting"
@@ -33,6 +34,7 @@ papers:
     paper_pdf: "https://neurips.cc/virtual/2025/poster/115889"
     code: "https://github.com/GuanghuiMin/rapid"
     poster: "assets/publications/2025_rapid/poster.pdf"
+    slides: "assets/publications/2025_rapid/rapid_slide.pdf"
     selected: y
 
   - title: "Demystifying Epidemic Containment in Directed Networks: Theory and Algorithms"
