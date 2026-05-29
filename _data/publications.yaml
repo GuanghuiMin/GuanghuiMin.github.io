@@ -1,4 +1,10 @@
 papers:
+  - title: "Calibrated Target-Aware Data Selection for Continual Mid-Training in Streams"
+    authors: "Ke Wan, Tianyi Zhao, Tianhao Huang, <b>Guanghui Min</b>, Chen Chen"
+    venue: "<b>CATS@ICML26</b>: Continual Adaptation at Scale: Towards Sustainable AI Workshop. 2026."
+    paper_pdf: "https://openreview.net/pdf?id=IhwYrJs9Ht"
+
+
   - title: "GIST: Targeted Data Selection for Instruction Tuning via Coupled Optimization Geometry"
     authors: "<b>Guanghui Min</b>, Tianhao Huang, Ke Wan, Chen Chen"
     venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
@@ -23,7 +29,7 @@ papers:
 
   - title: "Exploring Generative Approaches for Predicting Copolymer Sequences from Reaction Conditions"
     authors: "<b>Guanghui Min</b><sup>‡</sup>, Wenxin Xu<sup>‡</sup>, Kateri DuBay, Chen Chen"
-    venue: "<b>NeurIPS'25</b> AI for Science Workshop. 2025."
+    venue: "<b>AI4Science@NeurIPS25</b>: NeurIPS 2025 AI for Science Workshop. 2025."
     paper_pdf: "https://openreview.net/forum?id=h6aQcEKE8A"
     code: "https://github.com/GuanghuiMin/PolyGen"
     selected: n
