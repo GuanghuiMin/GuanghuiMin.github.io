@@ -85,6 +85,10 @@
               <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
              </span>
 
+              <span onclick="window.open('{{ site.data.main_info.semantic_scholar }}')" style="cursor: pointer">
+                <i class="ai ai-semantic-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa-brands fa-square-x-twitter fa-1x" aria-hidden="true"></i>
               </span>
@@ -101,12 +105,11 @@
                 <i class="fa-brands fa-orcid fa-1x" aria-hidden="true"></i>
               </span>
 
-                <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
-                <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
-              </span>
+               <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
+                 <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
+               </span>
 
-
-            </p>
+             </p>
         </div>
       </div>
     </section>
@@ -141,6 +144,10 @@
               <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
              </span>
 
+              <span onclick="window.open('{{ site.data.main_info.semantic_scholar }}')" style="cursor: pointer">
+                <i class="ai ai-semantic-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa-brands fa-square-x-twitter fa-1x" aria-hidden="true"></i>
               </span>
@@ -157,11 +164,11 @@
                 <i class="fa-brands fa-orcid fa-1x" aria-hidden="true"></i>
               </span>
 
-              <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
-                <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
-              </span>
+               <span onclick="window.open('{{ site.data.main_info.zhihu }}')" style="cursor: pointer">
+                 <i class="fa-brands fa-zhihu fa-1x" aria-hidden="true"></i>
+               </span>
 
-              {% if site.data.main_info.xiaohongshu_qr %}
+               {% if site.data.main_info.xiaohongshu_qr %}
               {% if site.data.main_info.xiaohongshu and site.data.main_info.xiaohongshu != "" %}
               <span class="xhs-hover" style="cursor: pointer" onclick="window.open('{{ site.data.main_info.xiaohongshu }}')">
               {% else %}
