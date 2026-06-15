@@ -11,13 +11,16 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2602.18584"
     code: "https://github.com/GuanghuiMin/GIST"
     slides: "assets/publications/2026_gist/gist_slide.pdf"
+    poster: "assets/publications/2026_gist/gist_poster.pdf"
     selected: y
 
   - title: "Bridging Dynamics and Data: A Unified Diffusion Framework for Mechanistically-Informed Epidemic Forecasting"
     authors: "<b>Guanghui Min</b>, Tianhao Huang, Ke Wan, Qi R. Wang, Chen Chen"
     venue: "<b>ICML'26</b>: The 43rd International Conference on Machine Learning. 2026."
-    paper_pdf: ""
+    paper_pdf: "https://icml.cc/virtual/2026/poster/65752"
     code: "https://github.com/GuanghuiMin/EpiDiff"
+    slides: "assets/publications/2026_epidiff/epidiff_slide.pdf"
+    poster: "assets/publications/2026_epidiff/epidiff_poster.pdf"
     selected: y
 
   - title: "Uncovering Latent Communication Patterns in Brain Networks via Adaptive Flow Routing"
@@ -37,7 +40,7 @@ papers:
   - title: "Scaling Epidemic Inference on Contact Networks: Theory and Algorithms"
     authors: "<b>Guanghui Min</b>, Yinhan He, Chen Chen"
     venue: "<b>NeurIPS'25</b>: The 39th Annual Conference on Neural Information Processing Systems. 2025."
-    paper_pdf: "https://neurips.cc/virtual/2025/poster/115889"
+    paper_pdf: "https://proceedings.neurips.cc/paper_files/paper/2025/file/1450de2df1dff2bb997fbb0b9136f2d0-Paper-Conference.pdf"
     code: "https://github.com/GuanghuiMin/rapid"
     poster: "assets/publications/2025_rapid/poster.pdf"
     slides: "assets/publications/2025_rapid/rapid_slide.pdf"
