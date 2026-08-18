@@ -1,4 +1,8 @@
 papers:
+  - title: "LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation"
+    authors: "Haochen Liu, <b>Guanghui Min</b>, Song Wang, Yada Zhu, Chen Chen, and Jundong Li"
+    venue: "<b>ICDM'26</b>: The 26th IEEE International Conference on Data Mining. 2026."
+
   - title: "Calibrated Target-Aware Data Selection for Continual Mid-Training in Streams"
     authors: "Ke Wan, Tianyi Zhao, Tianhao Huang, <b>Guanghui Min</b>, Chen Chen"
     venue: "<b>CATS@ICML26</b>: Continual Adaptation at Scale: Towards Sustainable AI Workshop. 2026."
